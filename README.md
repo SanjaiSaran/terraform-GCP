@@ -13,4 +13,3 @@ we will create: Vpc, Subnet, firewall rule, 3 instances
 
 6.vm-output.tf - Output of VM
 
-
