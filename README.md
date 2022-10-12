@@ -12,7 +12,3 @@ we will create: Vpc, Subnet, firewall rule, 3 instances
 5.variables-auth.tf - Application and authentication variables
 
 6.vm-output.tf - Output of VM
-
-
-
-
