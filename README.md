@@ -30,8 +30,8 @@ The project is organized into the following key components:
 
 2. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/automated-security-monitoring.git
-   cd automated-security-monitoring
+   git clone https://github.com/SanjaiSaran/terraform-GCP.git
+   cd terraform-GCP
 
 ## Initialize and Apply:
  ```bash
