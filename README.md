@@ -15,10 +15,12 @@ The "Automated Security Monitoring: Deploying Wazuh on Google Cloud Platform wit
 
 The project is organized into the following key components:
 
-- **main.tf:** Defines the GCP provider and creates the VPC, subnetworks, and other networking components.
-- **compute.tf:** Configures virtual machine instances for Wazuh manager and potentially other components.
-- **storage.tf:** Sets up storage buckets if needed.
-- **wazuh-manager-startup.sh:** Startup script for configuring the Wazuh manager on the VM instance.
+- **provider.tf:** - Configure Google Cloud provider.
+- **network-firewall.tf:** Configure basic firewall for the network.
+- **network.tf:** Define network, vpc, subnet, icmp firewall.
+- **terraform.tfvars:** Defining variables.
+- **variables-auth.tf:**  Application and authentication variables.
+- **vm-output.tf:** Output of VM.
 
 ## Getting Started
 
@@ -38,23 +40,8 @@ The project is organized into the following key components:
 ```
 
 ## Review the Configuration:
- - Customize Terraform variables and configurations in main.tf according to your requirements.
+ - Customize Terraform variables and configurations in terraform.tfvars according to your requirements.
 
 ## Access Wazuh Manager:
  - Once the deployment is complete, access the Wazuh manager and proceed with additional configurations.
 
-
-# Terraform-GCP
-we will create: Vpc, Subnet, firewall rule, 3 instances
-# files
-1.network-firewall.tf - Configure basic firewall for the network
-
-2.network.tf - Define network, vpc, subnet, icmp firewall
-
-3.provider.tf - Configure Google Cloud provider
-
-4.terraform.tfvars - Defining variables
-
-5.variables-auth.tf - Application and authentication variables
-
-6.vm-output.tf - Output of VM
